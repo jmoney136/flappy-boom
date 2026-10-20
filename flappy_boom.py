@@ -179,7 +179,7 @@ class Shockwave:
         alpha = int(180 * (1 - t))
         s = pygame.Surface((radius * 2 + width * 2, radius * 2 + width * 2), pygame.SRCALPHA)
         cx = radius + width
-        pygame.draw.circle(s, (255, 200, 100, alpha), (cx, cx), radius, width)
+        pygame.draw.circle(s, (255, 200, 100,), (cx, cx), radius, width)
         surface.blit(s, (self.x - cx, self.y - cx))
 
 
